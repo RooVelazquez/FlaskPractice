@@ -1,0 +1,2 @@
+# FlaskPractice
+Simple Flask Application
