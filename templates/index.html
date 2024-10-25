@@ -1,0 +1,25 @@
+<!DOCTYPE html> <!-- Declara que este documento es HTML5 -->
+<html> <!-- Elemento raíz del HTML -->
+<head>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body> <!-- Contiene todo el contenido visible de la página -->
+
+<h2>HTML Forms</h2> <!-- Título del formulario -->
+
+<form action="/submit" method='post'> <!-- Formulario que enviará datos a /submit usando el método POST -->
+  <label for="Science">Science:</label><br> <!-- Etiqueta para el campo de Science -->
+  <input type="text" id="science" name="science" value="0"><br> <!-- Campo de entrada para Science, con valor inicial 0 -->
+  <label for="Maths">Maths:</label><br> <!-- Etiqueta para el campo de Maths -->
+  <input type="text" id="maths" name="maths" value="0"><br><br> <!-- Campo de entrada para Maths, con valor inicial 0 -->
+  <label for="C ">C:</label><br> <!-- Etiqueta para el campo de C -->
+  <input type="text" id="c" name="c" value="0"><br><br> <!-- Campo de entrada para C, con valor inicial 0 -->
+  <label for="datascience">Data_Science:</label><br> <!-- Etiqueta para el campo de Data Science -->
+  <input type="text" id="data__science" name="datascience" value="0"><br><br> <!-- Campo de entrada para Data Science, con valor inicial 0 -->
+  <input type="submit" value="Submit"> <!-- Botón para enviar el formulario -->
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p> <!-- Explicación sobre la acción del formulario -->
+
+</body>
+</html>
